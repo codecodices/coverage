@@ -66,4 +66,4 @@ $(TEST): $(OBJS) $(TEST).cpp
 fizzbuzz.o: fizzbuzz.h
 
 clean:
-	$(RM) *.o *~ $(MAIN) $(TEST) *.gcda *.gcno *.gcov
+	$(RM) *.o *~ $(MAIN) $(TEST) *.gcda *.gcno *.gcov *.html

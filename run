@@ -13,4 +13,5 @@ make
 gcov -bar *.cpp
 
 # Now show the overall coverage
+gcovr -o coverage.html --html --html-details
 gcovr
