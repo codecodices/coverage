@@ -1,12 +1,4 @@
-To run coverage:
+Prerequisites:
+-- Install gcovr by running 'pip3 install --user gcovr'
 
-Build the program by executing "make".
-Run the program by executing ./fizzbuzzTest
-Display the coverage by executing gcov -abr fizzbuzz.cpp
-
-To use a nicer graphical web page, install gcovr by executing:
-pip3 install --user gcovr
-
-Then once coverage has been produced, run gcovr
-
-To produce html, run gcovr -o coverage.html --html
+Execute the ./run script.  This will display coverage the the screen using gcov, and it will also create coverage.html.

@@ -10,7 +10,7 @@ make
 ./fizzbuzzMain str 3
 
 # Now produce the coverage reports
-gcov -bar *.cpp
+gcov -b -a -c -r . *.cpp
 
 # Now show the overall coverage
 gcovr -o coverage.html --html --html-details
