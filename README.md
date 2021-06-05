@@ -1,0 +1,2 @@
+# coverage
+Coverage example
