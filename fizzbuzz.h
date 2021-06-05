@@ -5,14 +5,13 @@
 
 using namespace std;
 
-class FizzBuzz
-{
-    public:
-        string static fizzBuzz(int startingNumber, int endingNumber);
-        string static fizzBuzz(string startingNumber, string endingNumber);
+class FizzBuzz {
+public:
+    string static fizzBuzz(int startingNumber, int endingNumber);
+    string static fizzBuzz(string startingNumber, string endingNumber);
 
-    protected:
-        string static getString(int number);
+protected:
+    string static getString(int number);
 };
 
 #endif

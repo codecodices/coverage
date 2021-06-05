@@ -2,9 +2,10 @@
 
 class FizzBuzzTest : public FizzBuzz {
 public:
-      string static getString(int number) {
-          return FizzBuzz::getString(number);
-      }
+    string static getString(int number)
+    {
+        return FizzBuzz::getString(number);
+    }
 };
 
 #define BOOST_TEST_MODULE MyTest

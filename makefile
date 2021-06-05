@@ -45,7 +45,7 @@ TEST = fizzbuzzTest
 # deleting dependencies appended to the file from 'make depend'
 #
 
-.PHONY: depend clean
+.PHONY: clean indent
 
 all: $(MAIN) $(TEST)
 	@echo $(MAIN) and $(TEST) have been built
@@ -67,3 +67,6 @@ fizzbuzz.o: fizzbuzz.h
 
 clean:
 	$(RM) *.o *~ $(MAIN) $(TEST) *.gcda *.gcno *.gcov *.html
+
+indent:
+	clang-format -i --style=WebKit *.h *.cpp

@@ -19,7 +19,7 @@ int main(int argc, char** argv, char** env)
     if (argc == 3) {
         try {
             cout << FizzBuzz::fizzBuzz(argv[1], argv[2]) << endl;
-        } catch (std::invalid_argument const &e) {
+        } catch (std::invalid_argument const& e) {
             cout << "Invalid argument: " << e.what() << endl;
             returnValue = EXIT_FAILURE;
         }
