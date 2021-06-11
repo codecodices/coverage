@@ -3,6 +3,7 @@
 *.exe~
 *.dll
 *.so
+*.a
 *.dylib
 *.o
 *Main
@@ -20,3 +21,8 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+build/
+cmake_install.cmake
+CMakeFiles/
+
