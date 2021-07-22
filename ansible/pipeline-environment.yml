@@ -1,0 +1,79 @@
+---
+
+- name: Setting up build pipeline virtual machine dependencies
+  hosts: all
+  tasks:
+
+    - name: Installing GNU build tools 
+      yum:
+        name:
+          - autoconf
+          - automake
+          - libtool
+          - make 
+        state: latest
+
+    - name: Installing CMake 
+      yum:
+        name:
+          - cmake3
+        state: latest
+  
+    - name: Installing cppcheck 
+      yum:
+        name:
+          - cppcheck
+        state: latest
+  
+    - name: Installing CLang
+      yum:
+        name:
+          - clang
+        state: latest
+
+    - name: Installing version control tools
+      yum:
+        name:
+          - rcs
+          - subversion
+        state: latest
+  
+    - name: Installing compiler
+      yum:
+        name:
+          - gcc
+          - gcc-c++
+          - gcc-gfortran
+        state: latest
+
+    - name: Installing text processing tools
+      yum:
+        name:
+          - bison
+          - byacc
+          - flex
+        state: latest
+
+    - name: Installing development tools
+      yum:
+        name:
+          - cscope
+          - ctags
+          - diffstat
+          - doxygen
+          - indent
+          - intltool
+          - patchutils
+          - rpm-sign
+          - swig
+          - systemtap
+          - valgrind
+          - graphviz
+        state: latest
+ 
+    - name: Installing development libraries 
+      yum:
+        name:
+          - mesa-libGLU-devel
+          - ImageMagick
+        state: latest

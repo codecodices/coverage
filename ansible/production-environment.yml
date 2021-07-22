@@ -1,0 +1,22 @@
+---
+
+- name: Setting up production virtual machine 
+  hosts: all
+  tasks:
+
+    - name: Installing shared libraries
+      yum:
+        name:
+          - boost
+          - libglvnd-glx
+          - mesa-libGLU
+          - libX11 
+          - glibc
+          - libXext
+          - libstdc++
+          - libgcc
+          - libglvnd
+          - libXau
+          - libglvnd-glx
+          - libxcb
+        state: present 

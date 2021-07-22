@@ -1,0 +1,17 @@
+---
+
+- name: Installing TritonGui Application
+  hosts: all
+  tasks:
+
+    - name: Extracting Archive
+      ansible.builtin.unarchive:
+        src: TritonArchive.tbz2
+        dest: /usr/local/bin 
+        remote_src: no
+        owner: root
+        group: root
+        mode: '0755'
+      become: yes 
+      become_method: sudo
+

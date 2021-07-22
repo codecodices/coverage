@@ -1,0 +1,36 @@
+---
+
+- name: Setting up development virtual machine
+  hosts: all
+  tasks:
+
+    - name: Running equivalent of 'yum groupinstall "Development Tools"'
+      yum:
+        name:
+          - autoconf
+          - automake
+          - bison
+          - byacc
+          - cscope
+          - ctags
+          - diffstat
+          - doxygen
+          - flex
+          - gcc-gfortran
+          - indent
+          - intltool
+          - libtool
+          - patchutils
+          - rcs
+          - rpm-sign
+          - subversion
+          - swig
+          - systemtap
+        state: latest
+
+    - name: Installing development libraries 
+      yum:
+        name:
+          - mesa-libGLU-devel
+          - ImageMagick
+        state: latest

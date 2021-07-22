@@ -1,0 +1,11 @@
+---
+
+- name: Setting up development virtual machine
+  hosts: all
+  tasks:
+
+    - name: Installing git 
+      yum:
+        name:
+          - git 
+        state: present 
